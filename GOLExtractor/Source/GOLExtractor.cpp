@@ -2,10 +2,12 @@
 #include "Log.h"
 #include "OSCompatibilityLayer.h"
 
-void GOLExtractor::parseGarments(const std::string& gamePath)
+void GOLExtractor::extractGarments(const std::string& gamePath)
 {
 	primeLaFabricaDeColor(gamePath);
 	loadCoats(gamePath);
+	flagFoundry.loadImageFolders(gamePath);
+	flagFoundry.generateFlags(coats);
 }
 
 void GOLExtractor::primeLaFabricaDeColor(const std::string& gamePath)

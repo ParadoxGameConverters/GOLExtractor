@@ -22,8 +22,7 @@ int main(const int argc, char** argv)
 		}
 		auto theConfiguration = std::make_shared<Configuration>();
 		GOLExtractor golExtractor;
-		golExtractor.parseGarments(gamePath);
-		
+		golExtractor.extractGarments(gamePath);
 		Log(LogLevel::Info) << "Done.";
 
 		return 0;

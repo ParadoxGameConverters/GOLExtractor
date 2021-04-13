@@ -13,6 +13,9 @@
     <Filter Include="RequiredDLLs">
       <UniqueIdentifier>{04093579-b4fa-4654-a787-df069422b51e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FlagFoundry">
+      <UniqueIdentifier>{4af1f2e4-1176-46bf-af34-ba02c202dd5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\commonItems\Color.cpp">
@@ -63,6 +66,18 @@
       <Filter>NamedColors</Filter>
     </ClCompile>
     <ClCompile Include="Source\Configuration.cpp" />
+    <ClCompile Include="Source\FlagFoundry\FlagCrafter.cpp">
+      <Filter>FlagFoundry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FlagFoundry\FlagFoundry.cpp">
+      <Filter>FlagFoundry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FlagFoundry\Recolorer.cpp">
+      <Filter>FlagFoundry</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FlagFoundry\Warehouse.cpp">
+      <Filter>FlagFoundry</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\commonItems\Color.h">
@@ -112,6 +127,18 @@
       <Filter>NamedColors</Filter>
     </ClInclude>
     <ClInclude Include="Source\Configuration.h" />
+    <ClInclude Include="Source\FlagFoundry\FlagCrafter.h">
+      <Filter>FlagFoundry</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FlagFoundry\FlagFoundry.h">
+      <Filter>FlagFoundry</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FlagFoundry\Recolorer.h">
+      <Filter>FlagFoundry</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\FlagFoundry\Warehouse.h">
+      <Filter>FlagFoundry</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_bzlib_.dll">

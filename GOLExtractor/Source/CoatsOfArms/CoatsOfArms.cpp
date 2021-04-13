@@ -18,7 +18,6 @@ void CoatsOfArms::registerKeys()
 		macros.insert(std::pair(macroID, commonItems::getString(theStream)));
 	});
 	registerRegex(R"((e|k|d|c|b)_[A-Za-z0-9_\-\']+)", [this](const std::string& coaID, std::istream& theStream) {
-		Log(LogLevel::Info) << "loading " << coaID;
 		auto suspiciousItem = commonItems::stringOfItem(theStream).getString();
 		if (suspiciousItem.find('{') != std::string::npos)
 		{

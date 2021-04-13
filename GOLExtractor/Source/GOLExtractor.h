@@ -3,11 +3,12 @@
 #include "Magick++.h"
 #include "NamedColors/NamedColors.h"
 #include "CoatsOfArms/CoatsOfArms.h"
+#include "FlagFoundry/FlagFoundry.h"
 
 class GOLExtractor
 {
 public:
-	void parseGarments(const std::string& filePath);
+	void extractGarments(const std::string& filePath);
 
 private:
 	void primeLaFabricaDeColor(const std::string& gamePath);
@@ -15,6 +16,7 @@ private:
 	
 	NamedColors namedColors;
 	CoatsOfArms coats;
+	FlagFoundry flagFoundry;
 
 };
 
