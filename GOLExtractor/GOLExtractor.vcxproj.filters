@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="commonItems">
+      <UniqueIdentifier>{8b9fa87e-1016-46b8-80f8-25a7c82a9873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CoatsOfArms">
+      <UniqueIdentifier>{8e3ffa83-bf9b-40ef-a1a2-9fdb07828459}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NamedColors">
+      <UniqueIdentifier>{cee273e2-4cb7-426f-91b1-6355935ecc67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RequiredDLLs">
+      <UniqueIdentifier>{04093579-b4fa-4654-a787-df069422b51e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\commonItems\Color.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\CommonFunctions.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\ConvenientParser.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\iconvlite.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\Log.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\OSCommonLayer.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\Parser.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\ParserHelpers.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\StringUtils.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\commonItems\WinUtils.cpp">
+      <Filter>commonItems</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GOLExtractor.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\CoatsOfArms\CoatOfArms.cpp">
+      <Filter>CoatsOfArms</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CoatsOfArms\CoatsOfArms.cpp">
+      <Filter>CoatsOfArms</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CoatsOfArms\Emblem.cpp">
+      <Filter>CoatsOfArms</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CoatsOfArms\EmblemInstance.cpp">
+      <Filter>CoatsOfArms</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NamedColors\NamedColors.cpp">
+      <Filter>NamedColors</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Configuration.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\commonItems\Color.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\CommonFunctions.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\CommonRegexes.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\ConvenientParser.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\iconvlite.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\Log.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\OSCompatibilityLayer.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\Parser.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\ParserHelpers.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\commonItems\StringUtils.h">
+      <Filter>commonItems</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GOLExtractor.h" />
+    <ClInclude Include="Source\CoatsOfArms\CoatOfArms.h">
+      <Filter>CoatsOfArms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CoatsOfArms\CoatsOfArms.h">
+      <Filter>CoatsOfArms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CoatsOfArms\Emblem.h">
+      <Filter>CoatsOfArms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\CoatsOfArms\EmblemInstance.h">
+      <Filter>CoatsOfArms</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\NamedColors\NamedColors.h">
+      <Filter>NamedColors</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Configuration.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_bzlib_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_freetype_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_glib_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_lcms_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_libxml_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_lqr_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_Magick++_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_MagickCore_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_MagickWand_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_png_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\CORE_RL_zlib_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\IM_MOD_RL_bmp_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\IM_MOD_RL_dds_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\IM_MOD_RL_png_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\IM_MOD_RL_tga_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="..\imageMagick\dll-windows-required\IM_MOD_RL_xc_.dll">
+      <Filter>RequiredDLLs</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
