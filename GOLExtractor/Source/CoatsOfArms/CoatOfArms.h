@@ -1,5 +1,5 @@
-#ifndef CK3_COATOFARMS_H
-#define CK3_COATOFARMS_H
+#ifndef COATOFARMS_H
+#define COATOFARMS_H
 #include "Color.h"
 #include "Emblem.h"
 #include "Parser.h"
@@ -37,7 +37,7 @@ class CoatOfArms: commonItems::parser
 	std::vector<std::shared_ptr<CoatOfArms>> subs;										// These are sub-coatsofarms. They are recursive!
 	std::vector<EmblemInstance> instances;													// Used to position sub-coats.
 	std::optional<std::pair<std::string, std::shared_ptr<CoatOfArms>>> parent; // Used for recursive external flags.
-	std::map<std::string, std::string> macros; // translates @something into 0.22 or similar.
+	std::map<std::string, std::string> macros;											// translates @something into 0.22 or similar.
 };
 
-#endif // CK3_COATOFARMS_H
+#endif // COATOFARMS_H

@@ -1,5 +1,4 @@
 #include "NamedColors.h"
-#include "ParserHelpers.h"
 #include "CommonRegexes.h"
 #include "Log.h"
 
@@ -20,7 +19,7 @@ void NamedColors::loadColors(const std::string& filepath)
 void NamedColors::registerKeys()
 {
 	// If we get a color named "colors", we're f--d.
-	registerKeyword("colors", [](const std::string& unused, std::istream& theStream) {
+	registerKeyword("colors", [](std::istream& theStream) {
 		auto loadedColors = NamedColors();
 		loadedColors.loadColors(theStream);
 	});

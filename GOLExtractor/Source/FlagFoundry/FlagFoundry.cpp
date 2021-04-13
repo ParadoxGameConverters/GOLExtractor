@@ -1,13 +1,10 @@
 ﻿#include "FlagFoundry.h"
 #include "../CoatsOfArms/CoatOfArms.h"
+#include "../CoatsOfArms/CoatsOfArms.h"
 #include "Magick++.h"
 #include "OSCompatibilityLayer.h"
 #include "Warehouse.h"
 #include <ranges>
-
-#include "../CoatsOfArms/CoatsOfArms.h"
-
-// This is the only class that interacts with imageMagick, outside of EU4World, which depends on this one.
 
 FlagFoundry::FlagFoundry()
 {

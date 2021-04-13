@@ -1,7 +1,7 @@
-#include "Log.h"
-#include "GOLExtractor.h"
-#include "OSCompatibilityLayer.h"
 #include "Configuration.h"
+#include "GOLExtractor.h"
+#include "Log.h"
+#include "OSCompatibilityLayer.h"
 
 int main(const int argc, char** argv)
 {

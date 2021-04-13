@@ -1,5 +1,5 @@
-#ifndef EU4_RECOLORER_H
-#define EU4_RECOLORER_H
+#ifndef RECOLORER_H
+#define RECOLORER_H
 #include "Color.h"
 
 namespace Magick
@@ -15,7 +15,6 @@ class Recolorer
 	[[nodiscard]] static Magick::Image craftTextureImage(const coloredImage& imageBlock);
 
   private:
-
 	struct patternColorMasks // For reference only. Not used.
 	{
 		commonItems::Color color1 = commonItems::Color(std::array<int, 3>{255, 0, 0});
@@ -33,4 +32,4 @@ class Recolorer
 	} emblemColorMasks;
 };
 
-#endif // EU4_RECOLORER_H
+#endif // RECOLORER_H

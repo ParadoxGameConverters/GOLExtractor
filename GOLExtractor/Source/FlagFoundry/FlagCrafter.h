@@ -1,5 +1,5 @@
-#ifndef EU4_FLAG_CRAFTER_H
-#define EU4_FLAG_CRAFTER_H
+#ifndef FLAG_CRAFTER_H
+#define FLAG_CRAFTER_H
 #include "Color.h"
 
 namespace Magick
@@ -31,4 +31,4 @@ class FlagCrafter
 	std::shared_ptr<Warehouse> warehouse;
 };
 
-#endif // EU4_FLAG_CRAFTER_H
+#endif // FLAG_CRAFTER_H

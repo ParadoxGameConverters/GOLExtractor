@@ -135,7 +135,7 @@ std::vector<std::pair<Emblem, Magick::Image>> Warehouse::getTextures(const std::
 			continue; // We're done here.
 
 		// Do we have a base texture in storage from which we can craft an image?
-		if (!baseTextures.count(newImageBlock.patternName))
+		if (!baseTextures.contains(newImageBlock.patternName))
 		{
 			// Load the texture from disk.
 			std::string actualFolder;

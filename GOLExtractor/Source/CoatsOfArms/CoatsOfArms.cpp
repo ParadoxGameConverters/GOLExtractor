@@ -1,8 +1,8 @@
 #include "CoatsOfArms.h"
 #include "CoatOfArms.h"
+#include "CommonRegexes.h"
 #include "Log.h"
 #include "ParserHelpers.h"
-#include "CommonRegexes.h"
 #include <regex>
 
 void CoatsOfArms::loadCoats(const std::string& filePath)
@@ -14,8 +14,8 @@ void CoatsOfArms::loadCoats(const std::string& filePath)
 
 void CoatsOfArms::registerKeys()
 {
-	registerRegex(R"(@[A-Za-z0-9_\-\']+)", [this](const std::string& macroID, std::istream& theStream) {		
-		macros.insert(std::pair(macroID, commonItems::getString(theStream)));
+	registerRegex(R"(@[A-Za-z0-9_\-\']+)", [this](const std::string& macroID, std::istream& theStream) {
+		macros.emplace(macroID, commonItems::getString(theStream));
 	});
 	registerRegex(R"((e|k|d|c|b)_[A-Za-z0-9_\-\']+)", [this](const std::string& coaID, std::istream& theStream) {
 		auto suspiciousItem = commonItems::stringOfItem(theStream).getString();
@@ -31,7 +31,7 @@ void CoatsOfArms::registerKeys()
 					suspiciousItem = result;
 				}
 			}
-			
+
 			auto coaStream = std::stringstream(suspiciousItem);
 			auto newCoA = std::make_shared<CoatOfArms>(coaStream, coaID);
 			coats.insert(std::pair(coaID, newCoA));
@@ -45,7 +45,6 @@ void CoatsOfArms::registerKeys()
 			else
 				Log(LogLevel::Warning) << "Coat " << coaID << " is defined from an undefined " << coaString;
 		}
-		
 	});
 	registerRegex(commonItems::catchallRegex, commonItems::ignoreItem);
 }

@@ -8,7 +8,7 @@ class CoatsOfArms: commonItems::parser
   public:
 	CoatsOfArms() = default;
 	void loadCoats(const std::string& filepath);
-	[[nodiscard]] auto getCoats() const { return coats; }
+	[[nodiscard]] const auto& getCoats() const { return coats; }
 
   private:
 	void registerKeys();

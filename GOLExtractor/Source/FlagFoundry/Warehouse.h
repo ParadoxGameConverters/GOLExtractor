@@ -1,5 +1,5 @@
-#ifndef EU4_WAREHOUSE_H
-#define EU4_WAREHOUSE_H
+#ifndef WAREHOUSE_H
+#define WAREHOUSE_H
 #include <set>
 
 #include "Color.h"
@@ -46,4 +46,4 @@ class Warehouse
 	Recolorer recolorer;
 };
 
-#endif // EU4_WAREHOUSE_H
+#endif // WAREHOUSE_H

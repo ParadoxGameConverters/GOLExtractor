@@ -13,7 +13,7 @@ void GOLExtractor::extractGarments(const std::string& gamePath)
 void GOLExtractor::primeLaFabricaDeColor(const std::string& gamePath)
 {
 	Log(LogLevel::Info) << "-> Loading colors: " << gamePath + "common/named_colors";
-	for (const auto& file : commonItems::GetAllFilesInFolder(gamePath + "common/named_colors"))
+	for (const auto& file: commonItems::GetAllFilesInFolder(gamePath + "common/named_colors"))
 	{
 		if (file.find(".txt") == std::string::npos)
 			continue;

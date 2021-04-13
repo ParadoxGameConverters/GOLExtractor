@@ -1,8 +1,7 @@
-#ifndef EU4_FLAG_FOUNDRY_H
-#define EU4_FLAG_FOUNDRY_H
+#ifndef FLAG_FOUNDRY_H
+#define FLAG_FOUNDRY_H
 #include "Color.h"
 #include "FlagCrafter.h"
-#include <map>
 #include <memory>
 #include <string>
 
@@ -26,4 +25,4 @@ class FlagFoundry
 	std::shared_ptr<Warehouse> warehouse; // background image storage, loading and preparation
 };
 
-#endif // EU4_FLAG_FOUNDRY_H
+#endif // FLAG_FOUNDRY_H

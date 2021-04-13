@@ -1,5 +1,5 @@
-#ifndef CK3_EMBLEMINSTANCE_H
-#define CK3_EMBLEMINSTANCE_H
+#ifndef EMBLEMINSTANCE_H
+#define EMBLEMINSTANCE_H
 #include "Parser.h"
 
 class EmblemInstance: commonItems::parser
@@ -19,11 +19,11 @@ class EmblemInstance: commonItems::parser
   private:
 	void registerKeys();
 
-	double rotation = 0.0;							 // Degrees, clockwise.
-	double depth = 0.0;								 // Do. Not. Ask. Go to wiki and complain there.
-	std::vector<double> position; // Default position is UPPER LEFT corner. Targets CENTER of emblem.
-	std::vector<double> scale = {1.0, 1.0};	 // Relative to image size. Defaults to "across entire image".
-	std::vector<double> offset;	 // Used in sub-coat instances. Also UPPER LEFT corner. Targets UPPER LEFT corner of subcoat.
+	double rotation = 0.0;						 // Degrees, clockwise.
+	double depth = 0.0;							 // Do. Not. Ask. Go to wiki and complain there.
+	std::vector<double> position;				 // Default position is UPPER LEFT corner. Targets CENTER of emblem.
+	std::vector<double> scale = {1.0, 1.0}; // Relative to image size. Defaults to "across entire image".
+	std::vector<double> offset;				 // Used in sub-coat instances. Also UPPER LEFT corner. Targets UPPER LEFT corner of subcoat.
 };
 
-#endif // CK3_EMBLEMINSTANCE_H
+#endif // EMBLEMINSTANCE_H

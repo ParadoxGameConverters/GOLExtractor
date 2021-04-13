@@ -1,5 +1,5 @@
-#ifndef CK3_EMBLEM_H
-#define CK3_EMBLEM_H
+#ifndef EMBLEM_H
+#define EMBLEM_H
 #include "Color.h"
 #include "EmblemInstance.h"
 #include "Parser.h"
@@ -9,7 +9,10 @@ class Emblem: commonItems::parser
 {
   public:
 	Emblem() = default;
-	Emblem(std::istream& theStream, const std::optional<commonItems::Color>& color1, const std::optional<commonItems::Color>& color2, const std::optional<commonItems::Color>& color3);
+	Emblem(std::istream& theStream,
+		 const std::optional<commonItems::Color>& color1,
+		 const std::optional<commonItems::Color>& color2,
+		 const std::optional<commonItems::Color>& color3);
 
 	[[nodiscard]] const auto& getTexture() const { return texture; }
 	[[nodiscard]] const auto& getColor1() const { return color1; }
@@ -33,4 +36,4 @@ class Emblem: commonItems::parser
 	std::optional<commonItems::Color> parentColor3;
 };
 
-#endif // CK3_EMBLEM_H
+#endif // EMBLEM_H
