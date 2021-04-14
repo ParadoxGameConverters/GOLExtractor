@@ -1,7 +1,7 @@
-#include "Configuration.h"
 #include "GOLExtractor.h"
 #include "Log.h"
 #include "OSCompatibilityLayer.h"
+commonItems::Color::Factory laFabricaDeColor;
 
 int main(const int argc, char** argv)
 {
@@ -20,7 +20,6 @@ int main(const int argc, char** argv)
 			gamePath = commonItems::UTF16ToUTF8(*wGamePath) + "/game/";
 			Log(LogLevel::Info) << "CK3 installation found at: " << gamePath;
 		}
-		auto theConfiguration = std::make_shared<Configuration>();
 		GOLExtractor golExtractor;
 		golExtractor.extractGarments(gamePath);
 		Log(LogLevel::Info) << "Done.";

@@ -161,7 +161,6 @@
     <ClCompile Include="Source\CoatsOfArms\CoatsOfArms.cpp" />
     <ClCompile Include="Source\CoatsOfArms\Emblem.cpp" />
     <ClCompile Include="Source\CoatsOfArms\EmblemInstance.cpp" />
-    <ClCompile Include="Source\Configuration.cpp" />
     <ClCompile Include="Source\FlagFoundry\FlagCrafter.cpp" />
     <ClCompile Include="Source\FlagFoundry\FlagFoundry.cpp" />
     <ClCompile Include="Source\FlagFoundry\Recolorer.cpp" />
@@ -185,7 +184,6 @@
     <ClInclude Include="Source\CoatsOfArms\CoatsOfArms.h" />
     <ClInclude Include="Source\CoatsOfArms\Emblem.h" />
     <ClInclude Include="Source\CoatsOfArms\EmblemInstance.h" />
-    <ClInclude Include="Source\Configuration.h" />
     <ClInclude Include="Source\FlagFoundry\FlagCrafter.h" />
     <ClInclude Include="Source\FlagFoundry\FlagFoundry.h" />
     <ClInclude Include="Source\FlagFoundry\Recolorer.h" />
